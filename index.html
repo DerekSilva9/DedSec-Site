@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+
+        .cabecalho {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 30px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid white;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-left: auto;
+        }
+
+        li {
+            margin-right: 20px;
+            padding: 8px;
+            border-radius: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .dedsec {
+            width: 110px;
+            margin-right: 10px;
+        }
+
+        .wall {
+            background-image: url(assets/wallpaper.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            margin-top: 120px;
+        }
+
+        .title {
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .rodape{
+            background-color: black;
+            width: auto;
+            height: 100px;
+            margin-top: 100px;
+            border-top: 5px solid white;
+        }
+        main{
+            background-color: black;
+            height: 500px;
+            
+        }
+        .credits{
+            text-align: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+        picture{
+            justify-content: center;
+            display: flex;
+    
+        }
+        .banner{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html"><img class="dedsec" src="assets/dedsec.png" alt=""></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Suporte</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Operações</a></li>
+                <li><a href="">Mais↓</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="wall">
+            <h1 class="title">DedSec</h1>
+            <h1>Brazil</h1>      
+    </div>
+
+    <main>
+        <h2 style="padding: 30px;">DedSec</h2>
+
+        <picture>
+            <img class="banner" src="assets/omg.jpg" alt="">
+        </picture>
+
+    </main>
+
+    <footer class="rodape">
+        <p class="credits">DedSec - 2023</p>
+    </footer>
+</body>
+</html>
